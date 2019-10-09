@@ -1,5 +1,5 @@
 locationShort: we
-commonName: aks
+commonName: nosy
 environment: production
-environmentShort: prd
-externalDnsZone: example.com
+environmentShort: prod
+externalDnsZone: svc.nosy.tech

@@ -15,7 +15,7 @@ configuration:
     labels:
       istio-injection: disabled
   dnsTxtRecords:
-    enabled: false
+    enabled: true
     dmarc: "v=DMARC1; p=reject;"
     spf: "v=spf1 -all"
   certManager:
@@ -44,14 +44,14 @@ configuration:
     labels:
       istio-injection: disabled
   kubedb:
-    enabled: false
+    enabled: true
     namespace: kubedb
     state: present
     version: 0.11.0
     labels:
       istio-injection: disabled
   datadog:
-    enabled: true
+    enabled: false
     state: present
     namespace: datadog
     site: datadoghq.eu
@@ -79,17 +79,17 @@ configuration:
       istio-injection: enabled
   namespaces:
   -
-    name: project-dev
+    name: nosy-dev
     state: present
     labels:
       istio-injection: enabled
   -
-    name: project-qa
+    name: nosy-qa
     state: present
     labels:
       istio-injection: enabled
   -
-    name: project-prd
+    name: nosy-prod
     state: present
     labels:
       istio-injection: enabled
