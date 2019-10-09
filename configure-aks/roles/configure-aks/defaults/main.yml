@@ -37,6 +37,7 @@ configuration:
     labels:
       istio-injection: disabled
   velero:
+    enabled: true
     namespace: heptio-ark
     containerVersion: latest
     volumeSnapshotApiTimeout: 120
