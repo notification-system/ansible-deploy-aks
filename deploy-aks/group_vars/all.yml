@@ -1,14 +1,14 @@
 location: west europe
 locationShort: we
-commonName: aks
-sshUsername: <username>
-sshPublicKey: <public ssh key>
+commonName: nosy
+sshUsername: ansible
+sshPublicKey: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC/RBQgEtXBRFcSBv21GIutEXRuaN/0j1PnLtcXmp9mtMDpYahFUPf4dw7ycSWfuoUI4hCIgzDEKP/B2oHzSglCKoEreSe9/jy42Wc4ahb9p+qe0ZGuZcJlSIDa2vW/8B4D62ohwFPTgT/8u4EUO3HpDauQIBPwEZaP/fWWB06uzIaCDRiHk2zd+LZDflSrX+jiByKVO3VGGs/FalOabTln4xrPSfAbJnQFHTIFfSuIldq2q6ESJhw7gJFch8IlMJ54FDQu0SP/bFpvGpvvNvb36A0V7YqTItjijGNCqMyi50WYaZvAGISZ5+JlbzCyKiT75g0/1H+mq6SdLdMzspwL
 aksOsType: Linux
 aksVersion: 1.14.6
 environment: production
-environmentShort: prd
-nodeCount: 3
+environmentShort: prod
+nodeCount: 1
 osDiskSize: 128
 vmSize: Standard_DS2_v2
-externalDnsZone: example.com
+externalDnsZone: svc.nosy.tech
 omsEnabled: false

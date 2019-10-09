@@ -1,2 +1,5 @@
 .venv
 *.retry
+
+# IDE
+.history/
